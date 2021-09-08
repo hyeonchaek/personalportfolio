@@ -5,9 +5,13 @@
     align-items: center;
 }
 
-.aboutme-image{
-    background-image: url('/static/images/header.jpg');
-    height: 400px;
-    background-size: cover;
-    align-items: center;
+.about-me{
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-image img{
+    border-radius: 10px;
 }
