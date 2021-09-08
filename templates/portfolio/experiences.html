@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+{% extends "portfolio/base.html" %}
+
+    {% block content %}
+    {% load static %}
+
+    <!-- Experience Header -->
+    <div class="row justify-content-center header-image mt-3">
+        <div class="col-9">
+            <h1>Experience</h1>
+        </div>
+
+    </div>
+
+    <!-- Coding Languages -->
+    <div class="row justify-content-center mt-5 text-center">
+        <div class="col-3">
+            <h3>Java - 3 yrs</h3>
+            <img width="80%" src="{% static 'images/java.jpg' %}">
+        </div>
+
+        <div class="col-3">
+            <h3>Python - 2 yrs</h3>
+            <img width="60%" src="{% static 'images/python.png' %}">
+        </div>
+
+        <div class="col-3">
+            <h3>HTML - 1 yr</h3>
+            <img width="60%" src="{% static 'images/html.png' %}">
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3 text-center">
+        <div class="col-3">
+            <h3>CSS - 1 yr</h3>
+            <img width="70%" src="{% static 'images/css.png' %}">
+        </div>
+
+        <div class="col-3">
+            <h3>JavaScript - 1 yr</h3>
+            <img width="60%" src="{% static 'images/javascript.png' %}">
+        </div>
+    </div>
+
+    <!-- Past Projects -->
+    <div class="row mt-4">
+        <div class>
+            <h3>Past Projects</h3>
+            <ul>
+                <li>Made a simple tic-tac-toe game with HTML, CSS, and JavaScript where players could choose a picture to "play" with on the board</li>
+                <li>Created a blog-type website with Django and Python</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Future Projects -->
+    <div class="row mt-4">
+        <div class>
+            <h3>Future Projects</h3>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="row mt-4">
+        <div class>
+            <h3>Certifications</h3>
+        </div>
+    </div>
+
+    {% endblock %}

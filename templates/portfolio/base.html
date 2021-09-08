@@ -1,0 +1,68 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Home</title>
+  </head>
+  <body>
+      
+    <div class="flex-container">
+
+        <!-- Navbar -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-6">
+                <a href="{% url 'home' %}" style="text-decoration:none;color:black;"><h2>Hyeonchae Kim</h2></a>
+            </div>
+            
+            <div class="col-1 mt-2">
+                <a href="{% url 'aboutme' %}" style="text-decoration:none;color:#5973FF;">About Me</a>
+            </div>
+
+            <div class="col-1 mt-2">
+                <a href="{% url 'experiences' %}" style="text-decoration:none;color:#5973FF;">Experience</a>
+            </div>
+
+            <div class="col-1 mt-2">
+                <a href="" style="text-decoration:none;color:#5973FF;">Education</a>
+            </div>
+        </div>
+        
+        <!-- Unique Code -->
+        <div class="container">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+
+        <!-- Footer -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-5">
+                <p>© 2021 Personal Portfolio</p>
+            </div>
+
+            <div class="col-2">
+                <a href="https://github.com/hyeonchaek"><i class="fab fa-2x fa-github" style="color:black;"></i></a>
+            </div>
+
+            <div class="col-2">
+                <a href="">Two</a>
+            </div>
+        </div>
+
+    </div>
+
+  </body>
+</html>

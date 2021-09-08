@@ -1,0 +1,13 @@
+.header-image{
+    background-image: url('/static/images/header.jpg');
+    height: 400px;
+    background-size: cover;
+    align-items: center;
+}
+
+.aboutme-image{
+    background-image: url('/static/images/header.jpg');
+    height: 400px;
+    background-size: cover;
+    align-items: center;
+}
